@@ -9,7 +9,11 @@
 body {
 	margin: 0;
 	font-family: Helvetica;
-	background-color: #E9EAED;
+	background: url(../images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 a {
 	text-decoration: none;
@@ -49,4 +53,52 @@ header a {
 	display: inline-block;
 	text-align: center;
 	width: 89px;
+}
+#registerDiv {
+	font-family: 'myFirstFont';
+	height: auto;
+	border: none;
+	width: 530px;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.form-group {
+	margin-left: auto;
+	margin-right: auto;
+}
+.form-control, select {
+	width: 360px;
+	height: 40px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	background-color: #e5e5e5;
+	border: 1px solid #000;
+	border-radius: 3px;
+	font-size: 14px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.form-control:focus, .form-control:hover {
+	background-color: #FFF;
+	border: 1px solid #71B5FF;
+}
+select {
+	width: 382px;
+}
+#registerBtn {
+	width: 375px;
+	height: 60px;
+	position: relative;
+	margin-top: 10px;
+	background-color: #000;
+	color: #FFF;
+	border-radius: 3px;
+	font-family: 'myBtnFont';
+	font-size: 16px;
+	border: 1px solid #000;
+}
+#registerBtn:hover {
+	border: 1px solid #FFF;
 }

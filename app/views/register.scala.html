@@ -16,21 +16,32 @@
     * template and passing a `String` message.
     *@
     @* @play20.welcome(message, style = "Java")*@
-    <div class="personalInfo">
+    <div id="registerDiv">
+        <h1>Register</h1>
         <form>
-        First Name: <input type="text" name="firstname"> <br>
-        Last Name: <input type="text" name2="lastname"> <br>
-        Gender: <br>
-            <form>
-                <input type="radio" name="gender" value="male" checked> Male<br>
-                    <input type="radio" name="gender" value="female"> Female<br>
-                    <input type="radio" name="gender" value="other"> Other
-                    </form>
-                    Date of Birth: <input type="'date" name="bday"><br>
-                    Street: <input type="text" name="street"><br>
-                    City: <input type="text" name="city"><br>
-                    State: <select>
-                    <option value="none"></option>
+            <div class="form-group">
+                <input class="form-control" placeholder="first name" type="text" name="firstname">
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="last name" type="text" name2="lastname">
+            </div>
+            <div class="form-group">
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="date of birth" type="'date" name="bday">
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="street" type="text" name="street">
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="city" type="text" name="city"><br>
+            </div>
+            <div class="form-group">
+                <select>
+                    <option value="none">state</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -82,30 +93,32 @@
                     <option value="WV">West Virginia</option>
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
-                    </select><br>
-                    Zipcode: <input type="text" name="zipcode"><br>
-                        <br>
-
-                        School: <input type="text" school="school"><br>
-                        Degree: <input type="text" degree="degree"><br>
-                        </form>
-                        </div>
-                        <br>
-                            <br>
-                            Email: <input type="text" email="email"><br>
-
-                                <div class="passwords">
-                                    <form>
-
-
-                                    Password: <input type="password" name="password" id="password" ><br>
-
-                                    Confirm Password: <input type="password" name="cpassword" id="cpassword" onkeyup="checkPass(); return false;">
-                                    <span id="confirmMessage" class="confirmMessage"></span>
-                                    </form>
-
-                                    </div>
-
+                </select>
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="zipcode" type="text" name="zipcode">
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="school" type="text" school="school">
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="degree" type="text" degree="degree">
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <input class="form-control" placeholder="email" type="text" email="email"><br>
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="password" type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="confirm password" type="password" name="cpassword" id="cpassword" onkeyup="checkPass(); return false;">
+            </div>
+            <span id="confirmMessage" class="confirmMessage"></span>
+            <input type="submit" value="register" id="registerBtn">
+        </form>
+    </div>
 
 
 }
