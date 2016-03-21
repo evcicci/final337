@@ -87,7 +87,7 @@ header a {
 select {
 	width: 382px;
 }
-#registerBtn {
+#registerBtn, #loginBtn {
 	width: 375px;
 	height: 60px;
 	position: relative;
@@ -99,6 +99,6 @@ select {
 	font-size: 16px;
 	border: 1px solid #000;
 }
-#registerBtn:hover {
+#registerBtn:hover, #loginBtn:hover {
 	border: 1px solid #FFF;
 }
